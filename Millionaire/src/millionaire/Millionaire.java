@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package millionaire;
+package Millionaire;
 import javax.swing.JFrame;
 
 /**
@@ -20,24 +20,24 @@ public class Millionaire {
         int total = 256;
         int pound = total / 100;
         int whatsLeft = total % 100;
-        
+
         int fiftypence = whatsLeft / 50;
         whatsLeft = whatsLeft % 50;
-        
+
         int twentyPence = whatsLeft / 20;
         whatsLeft = whatsLeft % 20;
-        
+
         int tenPence = whatsLeft / 10;
         whatsLeft = whatsLeft % 10;
-        
+
         int fivepence = whatsLeft / 5;
         whatsLeft = whatsLeft % 5;
-        
+
         int twopence = whatsLeft / 2;
         whatsLeft = whatsLeft % 2;
-        
+
         int penny = whatsLeft / 1;
-        
+
         System.out.println("From " + total + "you get..");
         System.out.println(pound + " pounds");
         System.out.println(fiftypence + " fifties");
@@ -47,5 +47,5 @@ public class Millionaire {
         System.out.println(twopence + " twos");
         System.out.println(penny + " pennies");
     }
-    
+
 }
