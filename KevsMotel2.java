@@ -3,22 +3,15 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import static java.lang.System.out;
 
-class KevsMotelReverse {
+class KevsMotel{
   public static void main(String[] args) throws FileNotFoundException {
 
     Scanner diskScanner = new Scanner(new File("guests.txt"));
-    int guestsIn[];
-    guestsIn = new int[10];
-
+    out.println("Room\tGuests");
     for (int roomNum = 0; roomNum < 10; roomNum ++){
-      guestsIn[roomNum] = diskScanner.nextInt();
-    }
-    for (int roomNum = 9; roomNum >= 0; roomNum --){
-      if (guestsIn[roomNum] == 0){
-        System.out.print("Room ");
-        System.out.print(roomNum);
-        System.out.print(" is vacant.");
-      }
+      out.print(roomNum);
+      out.print("\t");
+      out.println(diskScanner.nextInt());
     }
     diskScanner.close();
   }
